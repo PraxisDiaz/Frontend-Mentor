@@ -1,0 +1,198 @@
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 50%);
+    --light-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.svg-desk{
+    position: absolute;
+    z-index: -1;
+}
+
+.svg-mobile{
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+.svg--top {
+    top: 0;
+    left: 0;
+}
+
+.svg--bottom {
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+/* Hero container */
+.hero-container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 6rem 8rem;
+
+    z-index: 1;
+}
+
+
+.hero-main {
+
+    min-height: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex-basis: 500px;
+}
+
+.hero-info h1 {
+    font-size: 3rem;
+    width: 80%;
+    color: var(--dark-magenta);
+}
+
+.hero-info p {
+    width: 380px;
+    margin-top: 1.2rem;
+    line-height: 1.3;
+}
+
+.hero-reviews {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 800px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-reviews .hero-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    width: 460px;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.hero-card .hero-text {
+    color: var(--dark-magenta);
+}
+
+.hero-card--light {
+    background-color: var(--light-magenta);
+}
+
+.hero-reviews .hero-card:nth-child(1) {
+    margin-right: 8rem;
+}
+
+.hero-reviews .hero-card:nth-child(2) {
+    margin-right: 5rem;
+}
+
+/* Hero Testimonials */
+
+.hero-testimonials {
+    margin: 2rem auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+
+    height: 290px;
+}
+
+.hero-testimonials .card {
+    width: 33%;
+    max-width: 350px;
+    height: 205px;
+
+    background-color: var(--dark-magenta);
+    padding: 1.2rem 2.4rem;
+    border-radius: 10px;
+}
+
+.hero-testimonials .card:nth-child(1) {
+    margin-top: -4rem;
+}
+
+.hero-testimonials .card:nth-child(3) {
+    margin-top: 4rem;
+}
+
+.hero-testimonials .card .card-header {
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+
+.card-name {
+    color: var(--white);
+}
+
+.card-header p {
+    color: var(--soft-pink);
+    margin-top: .5rem;
+}
+
+.card-img {
+    border-radius: 50%;
+    height: 90%;
+}
+
+.card-text {
+    color: var(--white);
+    line-height: 1.3;
+}
+
+
+/* Attribution */
+
+.attribution {
+    margin-top: 8rem;
+}
+
+
+
